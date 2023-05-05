@@ -1,4 +1,4 @@
-import axios from "../../../config/axios-config";
+import axios from "../components/axios-config";
 import { setAlert } from "./alert";
 import {
   REGISTER_SUCCESS,
