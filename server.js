@@ -10,7 +10,11 @@ const app = express();
 connectDB();
 
 //init MiddleWare
-app.use(cors()); // Add CORS middleware
+app.use(
+  cors({
+    origin: "https://dev-connector-r0oy.onrender.com",
+  })
+); // Add CORS middleware
 app.use(express.json({ extended: false }));
 
 //Define Routes
